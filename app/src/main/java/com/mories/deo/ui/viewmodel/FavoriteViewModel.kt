@@ -11,7 +11,7 @@ class FavoriteViewModel @Inject constructor(private val moviesUseCase: MoviesUse
 
     val movie = moviesUseCase.getFavoriteMovie().asLiveData()
 
-    internal fun setFavorite(movieDomainModel: MovieDomainModel, isfavorite: Boolean) {
-        moviesUseCase.setFavoriteMovie(movieDomainModel, isfavorite)
+    internal fun setFavorite(movieDomainModel: MovieDomainModel, isFavorite: Boolean) {
+        moviesUseCase.setFavoriteMovie(movieDomainModel, isFavorite)
     }
 }

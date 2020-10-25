@@ -42,7 +42,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ListViewHolder>() {
                 Glide.with(itemView.context)
                     .load("https://image.tmdb.org/t/p/w185" + data.backdropPath)
                     .into(item_img_movie)
-                item_judul_movie.text = data.title
+                item_title_movie.text = data.title
                 item_popularity_movie.text = data.popularity.toString()
                 item_overview_movie.text = data.overview
             }

@@ -15,7 +15,7 @@
         tools:listitem="@layout/items_movie" />
 
     <ProgressBar
-        android:id="@+id/progMovie"
+        android:id="@+id/progressMovie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

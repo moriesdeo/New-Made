@@ -36,13 +36,13 @@ class MainActivity : AppCompatActivity() {
         movieViewModel.movie.observe(this) { dataMovie ->
             if (dataMovie != null) {
                 when (dataMovie) {
-                    is Resource.Loading<*> -> progMovie.visibility = View.VISIBLE
+                    is Resource.Loading<*> -> progressMovie.visibility = View.VISIBLE
                     is Resource.Success<*> -> {
-                        progMovie.visibility = View.GONE
+                        progressMovie.visibility = View.GONE
                         movieAdapter.setData(dataMovie.data)
                     }
                     is Resource.Error<*> -> {
-                        progMovie.visibility = View.GONE
+                        progressMovie.visibility = View.GONE
                         tv_error.text = dataMovie.message ?: getString(R.string.something_wrong)
                     }
                 }
