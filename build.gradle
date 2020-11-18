@@ -23,7 +23,7 @@ buildscript {
         recyclerViewVersion = '1.1.0'
         appCompatVersion = '1.2.0'
         retrofit_version = '2.9.0'
-        logging_interceptor_version = '4.8.0'
+        logging_interceptor_version = '4.9.0'
         room_version = '2.2.5'
         lifecycle_version = '2.2.0'
 //        hilt_version='2.28-alpha'
@@ -34,7 +34,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.1.0"
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
